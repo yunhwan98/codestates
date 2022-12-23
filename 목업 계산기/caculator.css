@@ -1,0 +1,102 @@
+.container {
+  background-color: #0a0a0a;
+  padding: 1px;
+  border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
+}
+
+.header {
+  display: flex;
+  gap: 5px;
+  background-color: #5b595b;
+  padding: 8px;
+  border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
+}
+
+.header > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.close {
+  background-color: #f35f59;
+}
+
+.minimization {
+  background-color: #fabd2e;
+}
+
+.maximize {
+  background-color: #56c840;
+}
+
+.viewer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #5b595b;
+}
+
+.viewer > input {
+  background: unset;
+  color: white;
+  text-align: right;
+  border: unset;
+  font-size: 40px;
+}
+
+.viewer > input:focus {
+  outline: none;
+}
+
+.button-container {
+  background-color: #5b595b;
+  display: flex;
+}
+
+.number-container {
+  flex: 3;
+}
+.operator {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.operator > button {
+  background-color: #f89f0b;
+}
+
+.number-container > div {
+  display: flex;
+}
+
+.number-container button {
+  flex: 1;
+}
+.number {
+  display: flex;
+  flex-direction: column;
+}
+
+.number > div {
+  display: flex;
+}
+
+.number button {
+  flex: 1;
+}
+.zero {
+  flex: 2 !important;
+}
+
+button {
+  background-color: #838283;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: #e8e8e8;
+  font-size: 20px;
+  outline: 1px solid #5b595b;
+}
+.interface-button > button {
+  background-color: #6b696b;
+}
