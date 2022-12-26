@@ -1,7 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("https://www.10wallpaper.com/wallpaper/1366x768/2106/Macos_Monterey_2021_Apple_WWDC_5K_Poster_1366x768.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
 .container {
-  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #0a0a0a; */
   padding: 1px;
-  border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
 }
 
 .header {
@@ -32,6 +52,7 @@
 
 .viewer {
   display: flex;
+  flex: 2;
   justify-content: flex-end;
   background-color: #5b595b;
 }
@@ -51,16 +72,23 @@
 .button-container {
   background-color: #5b595b;
   display: flex;
+  flex: 5;
+  overflow: hidden;
+  border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px;
 }
 
 .number-container {
+  display: flex;
+  flex-direction: column;
   flex: 3;
 }
 .operator {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px;
 }
+
 .operator > button {
   background-color: #f89f0b;
 }
@@ -69,26 +97,27 @@
   display: flex;
 }
 
-.number-container button {
+.interface-button {
   flex: 1;
 }
+
 .number {
   display: flex;
+  flex: 4;
   flex-direction: column;
 }
 
 .number > div {
   display: flex;
-}
-
-.number button {
   flex: 1;
 }
+
 .zero {
   flex: 2 !important;
 }
 
 button {
+  flex: 1;
   background-color: #838283;
   border: none;
   border-radius: 0;
